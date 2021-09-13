@@ -1,0 +1,33 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+}
+
+li, p, button {
+    padding: 0px;
+    margin: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px;
+}
+
+#addBtn {
+    width: 100px;
+}
