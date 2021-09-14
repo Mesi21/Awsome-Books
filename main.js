@@ -3,6 +3,7 @@ const author = document.getElementById('bookAuthor');
 const addBook = document.getElementById('addBtn');
 const list = document.getElementById('bookList');
 const books = JSON.parse(localStorage.getItem('booklist') || '[]');
+// const removeBtns = document.getElementsByClassName('remove');
 
 function Book(title, author) {
   this.title = title;
@@ -29,15 +30,22 @@ const showBookOnList = () => {
     const currentTitle = document.createElement('p');
     const currentAuthor = document.createElement('p');
     const removeBtn = document.createElement('button');
+    const horizontalLine = document.createElement('hr');
     currentTitle.innerHTML = `${book.title}`;
     currentAuthor.innerHTML = `${book.author}`;
     currentBook.append(currentTitle);
     currentBook.append(currentAuthor);
+    removeBtn.className = 'remove';
     removeBtn.innerHTML = 'Remove';
     currentBook.append(removeBtn);
+    currentBook.append(horizontalLine);
     list.append(currentBook);
   });
 };
 
+const removeBook = () => {
+};
+
 addBook.addEventListener('click', addBookToList);
 showBookOnList();
+removeBook();
