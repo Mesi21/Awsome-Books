@@ -48,13 +48,3 @@ const addBookToList = () => {
 
 addBook.addEventListener('click', addBookToList);
 showBookOnList();
-
-// const delBtns = document.getElementsByClassName('remove');
-// Array.from(delBtns).forEach((btn) => {
-//   btn.addEventListener('click', () => {
-//     books = books.filter((book) => book.id !== btn.id);
-//     console.log(btn.id);
-//     console.log(books);
-//   });
-//   localStorage.setItem('booklist', JSON.stringify(books));
-// });
