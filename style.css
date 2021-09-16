@@ -1,13 +1,13 @@
 body {
-  padding: 0px;
+  padding: 0;
   width: 50%;
   margin: auto;
   text-align: left;
 }
 
 ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 100%;
   text-decoration: none;
   list-style: none;
@@ -16,8 +16,8 @@ ul {
 li,
 p,
 button {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 form {
