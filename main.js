@@ -10,27 +10,29 @@ class Book {
 
   showBookOnList = () => {
     list.innerHTML = '';
+    let idx = 1;
     this.books.forEach((book) => {
       const currentBook = document.createElement('div');
-      const currentTitle = document.createElement('p');
-      const currentAuthor = document.createElement('p');
+      const currentInfo = document.createElement('p');
       const removeBtn = document.createElement('button');
-      const horizontalLine = document.createElement('hr');
       const bookId = Object.entries(this.books).length;
-      currentTitle.innerHTML = `${book.title}`;
-      currentAuthor.innerHTML = `${book.author}`;
+      currentInfo.innerHTML = `"${book.title}" by ${book.author}`;
       removeBtn.id = bookId;
       removeBtn.addEventListener('click', () => {
         this.books = this.books.filter((currBk) => currBk.id !== book.id);
         localStorage.setItem('booklist', JSON.stringify(this.books));
         this.showBookOnList();
       });
-      currentBook.append(currentTitle);
-      currentBook.append(currentAuthor);
+      currentBook.append(currentInfo);
       removeBtn.className = 'remove';
       removeBtn.innerHTML = 'Remove';
       currentBook.append(removeBtn);
-      currentBook.append(horizontalLine);
+      if (idx % 2 === 0) {
+        currentBook.classList.add('row-even');
+      } else {
+        currentBook.classList.add('row-odd');
+      }
+      idx += 1;
       list.append(currentBook);
     });
   };

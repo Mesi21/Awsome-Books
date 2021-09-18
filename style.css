@@ -2,7 +2,7 @@ body {
   padding: 0;
   width: 50%;
   margin: auto;
-  text-align: left;
+  text-align: center;
 }
 
 ul {
@@ -26,9 +26,63 @@ form {
 }
 
 input {
-  margin: 10px;
+  width: 90%;
+  margin: 15px;
+  height: 30px;
+  padding: 3px;
+  border: 2px solid rgb(61, 60, 60);
 }
 
 #addBtn {
   width: 100px;
+  margin-left: auto;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 5px 5px rgb(61, 60, 60);
+}
+
+.row-odd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  padding: 3px;
+}
+
+.row-even {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  height: 40px;
+  background-color: rgb(172, 172, 172);
+}
+
+.remove {
+  height: 25px;
+  width: 70px;
+}
+
+#bookList {
+  margin: 50px 0;
+  border: 2px solid rgb(61, 60, 60);
+}
+
+hr {
+  width: 40%;
+  border-color: rgb(61, 60, 60);
+}
+
+#addBooks {
+  margin-top: 35px;
+}
+
+#newBook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
