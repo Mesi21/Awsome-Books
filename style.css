@@ -1,8 +1,42 @@
 body {
   padding: 0;
-  width: 50%;
+  width: 100%;
   margin: auto;
   text-align: center;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+div,
+a,
+li,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(46, 46, 46);
+  color: #fff;
 }
 
 ul {
@@ -13,11 +47,35 @@ ul {
   list-style: none;
 }
 
-li,
-p,
-button {
-  padding: 0;
-  margin: 0;
+header ul {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header li {
+  margin-left: 80px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#links {
+  width: 30%;
+  margin-left: auto;
+}
+
+#date-time {
+  width: 98%;
+  color: #000;
+  margin-top: 80px;
+  justify-content: flex-end;
+}
+
+main {
+  width: 70%;
+  margin: 150px auto;
 }
 
 form {
@@ -71,11 +129,6 @@ input {
   border: 2px solid rgb(61, 60, 60);
 }
 
-hr {
-  width: 40%;
-  border-color: rgb(61, 60, 60);
-}
-
 #addBooks {
   margin-top: 35px;
 }
@@ -85,4 +138,15 @@ hr {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  padding: 0 20px;
+  align-items: center;
+  text-align: left;
+  color: #fff;
+  background-color: rgb(71, 71, 71);
 }

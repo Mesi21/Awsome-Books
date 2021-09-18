@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Awsome Books</title>
-</head>
-<body>
-    <div id="title"><h1>All Awsome Books</h1></div>
-    <div id="bookList"></div>
-    <hr id="separator">
-    <div id="addBooks">
+  </head>
+  <body>
+    <header class="flex-row">
+      <div id="logo"><h3>Awsome Books</h3></div>
+      <div id="links">
+        <ul class="flex-row">
+          <li><a href="#bookList" id="listLink">List</a></li>
+          <li><a href="#addBooks" id="addBookLink">Add new</a></li>
+          <li><a href="#contact-container" id="contactLink">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="date-time" class="flex-row">Just some dummy text</div>
+    <main> 
+      <div id="title"><h1 id="awsome">All Awsome Books</h1></div>
+      <div id="bookList"></div>
+      <div id="addBooks">
         <h1>Add a new book</h1>
         <form id="newBook">
-            <input type="text" placeholder="Title" name="Title" id="bookTitle">
-            <input type="text" placeholder="Author" name="Author" id="bookAuthor">
-            <input type="button" id="addBtn" value="Add">
+          <input type="text" placeholder="Title" name="Title" id="bookTitle" />
+          <input
+            type="text"
+            placeholder="Author"
+            name="Author"
+            id="bookAuthor"
+          />
+          <input type="button" id="addBtn" value="Add" />
         </form>
-    </div>
+      </div>
+      <div id="contact-container">
+        <h1 id="contact-title">Contact information</h1>
+        <p>
+          Do you have any questions or you just want to say "Hello"? You can
+          reach out to us!
+        </p>
+        <ul>
+          <li>Our email: mail@mail.com</li>
+          <li>Our phone number: 1234568</li>
+          <li>Our address: Streetname , city, country</li>
+        </ul>
+      </div>
+    </main>
+    <footer class="flex-row"><h3>&copy; 2021 * Molnar Emese</h3></footer>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
     <script src="main.js"></script>
-</body>
+    <script src="display.js"></script>
+  </body>
 </html>
