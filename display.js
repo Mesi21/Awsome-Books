@@ -7,6 +7,16 @@ const contactLk = document.getElementById('contactLink');
 const pageTitle = document.getElementById('awsome');
 const dateTime = document.getElementById('date-time');
 
+const date = () => {
+/* eslint-disable */
+window.addEventListener('load', () => {
+    const { DateTime } = luxon;
+    this.today = DateTime.now();
+    dateTime.textContent = this.today.toLocaleString(DateTime.DATETIME_MED);      
+});
+/* eslint-enable */
+};
+
 addBookPage.style.display = 'none';
 contactPage.style.display = 'none';
 pageTitle.style.display = 'block';
@@ -32,3 +42,5 @@ contactLk.addEventListener('click', () => {
   contactPage.style.marginTop = '80px';
   homePage.style.display = 'none';
 });
+
+date();
