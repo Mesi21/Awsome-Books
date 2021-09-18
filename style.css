@@ -39,6 +39,14 @@ header {
   color: #fff;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+}
+
 header ul {
   align-items: center;
   justify-content: flex-start;
@@ -68,14 +76,6 @@ header a {
 main {
   width: 70%;
   margin: 150px auto;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  text-decoration: none;
-  list-style: none;
 }
 
 form {
@@ -142,7 +142,7 @@ input {
 
 footer {
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   height: 50px;
   padding: 0 20px;
   align-items: center;
