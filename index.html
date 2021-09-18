@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Awsome Books</title>
+    <script data-main="scripts/app" src="scripts/require.js"></script>
   </head>
   <body>
     <header class="flex-row">
       <div id="logo"><h3>Awsome Books</h3></div>
       <div id="links">
         <ul class="flex-row">
-          <li><a href="#bookList">List</a></li>
-          <li><a href="#addBooks">Add new</a></li>
-          <li><a href="#contact-container">Contact</a></li>
+          <li><a href="#bookList" id="listLink">List</a></li>
+          <li><a href="#addBooks" id="addBookLink">Add new</a></li>
+          <li><a href="#contact-container" id="contactLink">Contact</a></li>
         </ul>
       </div>
-      <div id="date"></div>
     </header>
-    <main>
-      <div id="title"><h1>All Awsome Books</h1></div>
+    <div id="date-time" class="flex-row">Just some dummy text</div>
+    <main> 
+      <div id="title"><h1 id="awsome">All Awsome Books</h1></div>
       <div id="bookList"></div>
-      <hr id="separator" />
       <div id="addBooks">
         <h1>Add a new book</h1>
         <form id="newBook">
@@ -37,7 +37,7 @@
         </form>
       </div>
       <div id="contact-container">
-        <h1>Contact information</h1>
+        <h1 id="contact-title">Contact information</h1>
         <p>
           Do you have any questions or you just want to say "Hello"? You can
           reach out to us!
@@ -51,5 +51,6 @@
     </main>
     <footer class="flex-row"><h3>&copy; 2021 * Molnar Emese</h3></footer>
     <script src="main.js"></script>
+    <script src="display.js"></script>
   </body>
 </html>
