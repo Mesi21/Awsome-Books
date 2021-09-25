@@ -1,6 +1,6 @@
 # Awsome Books
 
-This project is about a page on which the added books are displayed as a list and there is an input field where the user can add a new book and he/she can also remove one from the existing list  The page was built using JavaScript.
+This project is about a page on which the added books are displayed as a list and there is an input field where the user can add a new book and he/she can also remove one from the existing list. The page was built using JavaScript.
 
 - - - -
 ![Books](/Assets/Books.png?raw=true "Awsome Books")
@@ -48,5 +48,5 @@ Give a ⭐️ if you like this project.
 * Morning session team
 * Standup team
 
-# Licence
+# License
 This project is [MIT](license.txt) licensed.
